@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '15.6'
+
+target 'lo-example' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for lo-example
+  pod 'FLEX', :configurations => ['Debug']
+
+  # Released version
+  #pod 'LANDMARKSID-LO-SDK', :git => 'https://github.com/LANDMARKSID/ios-lo-sdk.git', :tag => '2.7.0'
+
+  ## Local Development
+
+  # Uncomment the line below to use the local version of the SDK to test the xcframework built locally
+  #pod 'LANDMARKSID-LO-SDK', :podspec => '../..'
+
+  # Uncomment the line below to use the source code of the SDK to test the module directly
+  pod 'LANDMARKSID-LO-SDK', :path => '../..'
+end

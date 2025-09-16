@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Landmarks_LO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="H53-oK-Obk">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="aVC-vw-hff">
+                                <rect key="frame" x="64" y="638" width="286" height="176.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kx9-U5-G6W">
+                                        <rect key="frame" x="0.0" y="0.0" width="286" height="27"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title="Settings">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <imageReference key="image" image="gear" catalog="system" symbolScale="large" renderingMode="template"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapSettings:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rBi-kj-JEs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buj-O6-5Od">
+                                        <rect key="frame" x="0.0" y="53" width="286" height="22"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title="set custom data">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <imageReference key="image" image="pencil" catalog="system" symbolScale="large" renderingMode="template"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sendCustomDataButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nwe-Ov-VlQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjr-bW-Nqd">
+                                        <rect key="frame" x="0.0" y="101" width="286" height="25.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title="location permission">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <imageReference key="image" image="location" catalog="system" symbolScale="large"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sendLocationPermissionButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fbC-f3-7va"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TI8-j1-Rq5">
+                                        <rect key="frame" x="0.0" y="152.5" width="286" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title=" Debugger">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <imageReference key="image" image="terminal" catalog="system" symbolScale="large"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapDebuggerButton:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A5r-rk-vdR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="aVC-vw-hff" firstAttribute="centerX" secondItem="H53-oK-Obk" secondAttribute="centerX" id="0AB-tt-YvU"/>
+                            <constraint firstItem="H53-oK-Obk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="C9g-kk-CUa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H53-oK-Obk" secondAttribute="trailing" id="Lcf-br-Afh"/>
+                            <constraint firstItem="aVC-vw-hff" firstAttribute="leading" secondItem="H53-oK-Obk" secondAttribute="leading" constant="64" id="MbK-mc-f0b"/>
+                            <constraint firstItem="H53-oK-Obk" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="TBZ-2x-KE7"/>
+                            <constraint firstItem="H53-oK-Obk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="leh-I0-RrB"/>
+                            <constraint firstItem="aVC-vw-hff" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="590" id="qPA-Ms-9Dd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="debuggerButton" destination="TI8-j1-Rq5" id="ZIo-KH-Kot"/>
+                        <outlet property="sendLocationPermissionButton" destination="xjr-bW-Nqd" id="j11-ac-r5l"/>
+                        <outlet property="setCustomeDataButton" destination="buj-O6-5Od" id="ZQd-UJ-BuP"/>
+                        <outlet property="settingsButton" destination="Kx9-U5-G6W" id="Axm-AM-Tka"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="654" height="1272"/>
+        <image name="gear" catalog="system" width="128" height="122"/>
+        <image name="location" catalog="system" width="128" height="119"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="terminal" catalog="system" width="128" height="93"/>
+    </resources>
+</document>

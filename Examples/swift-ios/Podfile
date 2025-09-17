@@ -9,7 +9,7 @@ target 'lo-example' do
   pod 'FLEX', :configurations => ['Debug']
 
   # Released version
-  #pod 'LANDMARKSID-LO-SDK', :git => 'https://github.com/LANDMARKSID/ios-lo-sdk.git', :tag => '2.7.0'
+  #pod 'LANDMARKSID-LO-SDK', :git => 'https://github.com/LANDMARKSID/ios-lo-sdk.git', :tag => '3.0.0'
 
   ## Local Development
 

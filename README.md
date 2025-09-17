@@ -2,7 +2,7 @@
 id: iOS_LO
 title: LO - iOS SDK
 ---
-## V 2.7.0 (released 08-09-2025)
+## V 3.0.0 (released 16-09-2025)
 
 ## Support
 - The LANDMARKS ID SDK supports iOS 15.6 and above.
@@ -14,7 +14,7 @@ title: LO - iOS SDK
 2. Include the LandmarksID pod in the Podfile.
 
 ```ruby
-pod 'LANDMARKSID-LO-SDK', :git => 'https://github.com/LANDMARKSID/ios-lo-sdk.git', :tag => '2.7.0'
+pod 'LANDMARKSID-LO-SDK', :git => 'https://github.com/LANDMARKSID/ios-lo-sdk.git', :tag => '3.0.0'
 ```
 3. Run `pod install`.
 
@@ -40,7 +40,7 @@ An example application is available in the Examples folder of the [GitHub reposi
    ```
    https://github.com/LANDMARKSID/ios-lo-sdk.git
    ```
-3. Select the latest version available (2.7.0).
+3. Select the latest version available (3.0.0).
 4. Click **Add Package** and wait for Xcode to resolve the dependency.
 5. Select **LandmarksIDiOS** from the list and click **Add Package**.
 

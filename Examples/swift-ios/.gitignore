@@ -1,3 +1,4 @@
 build/
 Pods/
 Config.xcconfig
+Podfile.lock

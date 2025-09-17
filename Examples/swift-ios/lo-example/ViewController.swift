@@ -1,5 +1,7 @@
 import UIKit
+#if DEBUG
 import FLEX
+#endif
 import LandmarksIDSDK
 
 class ViewController: UIViewController {
@@ -49,7 +51,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func didTapDebuggerButton(_ sender: UIButton, forEvent event: UIEvent) {
+        #if DEBUG
         FLEXManager.shared.showExplorer()
+        #endif
     }
     
     override func viewDidLoad() {

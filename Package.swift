@@ -16,8 +16,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "LandmarksIDSDK",
-            url: "https://github.com/LANDMARKSID/ios-lo-sdk/releases/download/2.7.0/LandmarksIDSDK.xcframework.zip",
-            checksum: "5607125558b4f0bf07de277702d60ab8dc3b2bf207b922db39178c15f30366fe"
+            url: "https://github.com/LANDMARKSID/ios-lo-sdk/releases/download/3.0.0/LandmarksIDSDK.xcframework.zip",
+            checksum: "57a4acd31f2361958175e0784558e96a0ae933230b1fc50136a1ace3062d5db5"
         ),
     ]
 )

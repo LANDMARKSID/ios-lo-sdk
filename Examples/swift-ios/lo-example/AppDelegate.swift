@@ -1,5 +1,7 @@
 import UIKit
+#if DEBUG
 import FLEX
+#endif
 import LandmarksIDSDK
 
 @UIApplicationMain
@@ -9,7 +11,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var landmarksIdManager: LandmarksIDManagerDelegate?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        #if DEBUG
         FLEXManager.shared.isNetworkDebuggingEnabled = true
+        #endif
         
         guard let appId = Bundle.main.object(forInfoDictionaryKey: "LANDMARKS_ID_SDK_APP_ID") as? String else {
             fatalError("Error: 'LANDMARKS_ID_SDK_APP_ID' not found or not a String in Info.plist")

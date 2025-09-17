@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name = "LANDMARKSID-LO-SDK"
-    s.version = "2.7.0"
+    s.version = "3.0.0"
     s.summary = "LANDMARKS ID is a real world insights platform that helps brands learn more about their customers, locations and competitors"
     s.description = "LANDMARKS ID is a mobile location intelligence platform that provides brands and marketers privacy compliant location data on their customers real world behaviours, brand affinities and purchase intents"
     s.homepage = "https://www.landmarksid.com"

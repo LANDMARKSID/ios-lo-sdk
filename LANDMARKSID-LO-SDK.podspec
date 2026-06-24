@@ -21,13 +21,13 @@ Pod::Spec.new do |s|
     s.requires_arc = true
     s.ios.deployment_target = '15.6'
     s.documentation_url = 'https://docs.landmarksid.com/docs/overview.html'
-    s.frameworks = 'CoreLocation', 'CoreTelephony', 'SystemConfiguration', 'Foundation', 'AdSupport', 'UIKit'
+    s.frameworks = 'CoreLocation', 'SystemConfiguration', 'Foundation', 'AdSupport', 'UIKit'
     s.weak_framework = 'AppTrackingTransparency'
 
     # Production Build
-    s.vendored_frameworks = "LandmarksIDSDK.xcframework"
+  s.vendored_frameworks = "LandmarksIDSDK.xcframework"
 
     # Local development
-    #s.source_files = "LandmarksIDSDK/**/*.{h,m}"
-    #s.public_header_files = "LandmarksIDSDK/**/*.h"
+  #s.source_files = "LandmarksIDSDK/**/*.{h,m}"
+  #s.public_header_files = "LandmarksIDSDK/**/*.h"
   end

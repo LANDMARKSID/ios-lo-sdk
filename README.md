@@ -2,7 +2,7 @@
 id: iOS_LO
 title: LO - iOS SDK
 ---
-## V 3.0.0 (released 16-09-2025)
+## V 3.0.0 (released 24-06-2026)
 
 ## Support
 - The LANDMARKS ID SDK supports iOS 15.6 and above.

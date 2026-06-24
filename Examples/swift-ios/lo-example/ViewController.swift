@@ -1,5 +1,5 @@
 import UIKit
-#if DEBUG
+#if canImport(FLEX)
 import FLEX
 #endif
 import LandmarksIDSDK
@@ -51,7 +51,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func didTapDebuggerButton(_ sender: UIButton, forEvent event: UIEvent) {
-        #if DEBUG
+        #if canImport(FLEX)
         FLEXManager.shared.showExplorer()
         #endif
     }

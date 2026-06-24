@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.5
 import PackageDescription
 
 let package = Package(
@@ -17,7 +17,7 @@ let package = Package(
         .binaryTarget(
             name: "LandmarksIDSDK",
             url: "https://github.com/LANDMARKSID/ios-lo-sdk/releases/download/3.0.0/LandmarksIDSDK.xcframework.zip",
-            checksum: "57a4acd31f2361958175e0784558e96a0ae933230b1fc50136a1ace3062d5db5"
+            checksum: "1666b60a9a93474ab0e6e5b44cce6713ade1d551bea5daab4d6f4ffbed1ba07b"
         ),
     ]
 )

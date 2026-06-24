@@ -1,5 +1,5 @@
 import UIKit
-#if DEBUG
+#if canImport(FLEX)
 import FLEX
 #endif
 import LandmarksIDSDK
@@ -11,7 +11,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var landmarksIdManager: LandmarksIDManagerDelegate?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        #if DEBUG
+        #if canImport(FLEX)
         FLEXManager.shared.isNetworkDebuggingEnabled = true
         #endif
         
